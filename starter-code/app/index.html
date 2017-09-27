@@ -8,12 +8,18 @@
 <body>
   <div class="overlay">
   </div>
+  <audio id="theme" src="./media/hobbit_theme.mp3"></audio>
   <audio id="nazgul-screech" src="./media/nazgul_screech.mp3"></audio>
   <script charset="utf-8">
     function nazgulScreech(){
       document.getElementById("nazgul-screech").play();
     }
+
+    (function(){
+      document.getElementById("theme").play();
+    })()
   </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="./scripts/fellowship.js"></script>
 </body>
 </html>
